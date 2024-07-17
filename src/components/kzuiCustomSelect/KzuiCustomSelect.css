@@ -1,0 +1,123 @@
+
+.kzui-custom-select {
+  position: relative;
+  width: 350px;
+  font-family: Arial, sans-serif;
+  
+}
+
+.kzui-custom-select_main-container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background: linear-gradient(to right, #362c6a, #191438);
+  height:80vh;
+  border-radius: 12px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 80px;
+  
+}
+.kzui-custom-select__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.kzui-custom-select__placeholder {
+  color: #888;
+}
+
+.kzui-custom-select__multi-values {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kzui-custom-select__multi-value {
+  background: #191438;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.kzui-custom-select__clear-single {
+  margin-left: 4px;
+  cursor: pointer;
+  color: #888;
+}
+
+.kzui-custom-select__clear-all {
+  cursor: pointer;
+  color: #888;
+}
+
+.kzui-custom-select__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #392e6d;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.kzui-custom-select__search-input {
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.kzui-custom-select__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kzui-custom-select__option {
+  padding: 8px;
+  cursor: pointer;
+  height: 18px;
+  
+}
+
+.kzui-custom-select__option--selected {
+  background: #e0e0e0;
+}
+
+.kzui-custom-select__option:hover {
+  background: #7d7494;
+}
+
+.kzui-custom-select__group {
+  border-top: 1px solid #ccc;
+}
+
+.kzui-custom-select__group-label {
+  padding: 8px;
+  background: #392e6d;
+  font-weight: bold;
+}
+
+.kzui-custom-select__group-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kzui-custom-select--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
