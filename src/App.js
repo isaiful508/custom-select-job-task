@@ -6,13 +6,8 @@ function App() {
   const [value, setValue] = useState(null);
 
 
-  const options = [
-    { label: 'Option 1', value: 1 },
-    { label: 'Option 2', value: 2 },
-    { label: 'Option 3', value: 3 },
-    { label: 'Option 4', value: 4 }
-  ];
 
+  // group options
   const groupedOptions = [
     {
       label: 'Dhaka',
@@ -51,9 +46,12 @@ function App() {
   const handleSearch = (searchTerm) => {
     console.log('Search:', searchTerm);
   };
+
   return (
     <div className='kzui-custom-select_main-container'>
+
       <h2>Custom Select Component</h2>
+
       <KzuiCustomSelect
         isClearable={true}
         isSearchable={true}
@@ -67,6 +65,7 @@ function App() {
         onMenuOpen={handleMenuOpen}
         onSearchHandler={handleSearch}
       />
+      
     </div>
   );
 }

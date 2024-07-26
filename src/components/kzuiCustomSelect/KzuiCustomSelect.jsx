@@ -18,6 +18,7 @@ const KzuiCustomSelect = ({
   const [searchTerm, setSearchTerm] = useState('');
   const selectRef = useRef(null);
 
+  //select handler
   const handleSelect = (option) => {
     if (isMulti) {
       const newValue = value && Array.isArray(value) && value.includes(option)
@@ -29,6 +30,7 @@ const KzuiCustomSelect = ({
       setIsOpen(false);
     }
   };
+
 
   const handleClear = () => {
     onChangeHandler(isMulti ? [] : null);
@@ -43,6 +45,8 @@ const KzuiCustomSelect = ({
     }
   };
 
+  
+  // options filter
   const filteredOptions = isGrouped
     ? options.map(group => ({
         ...group,
@@ -81,6 +85,7 @@ const KzuiCustomSelect = ({
           </span>
         )}
       </div>
+
       {isOpen && (
         <div className="kzui-custom-select__menu">
           {isSearchable && (
@@ -92,6 +97,7 @@ const KzuiCustomSelect = ({
               placeholder="Search..."
             />
           )}
+
           <ul className="kzui-custom-select__list">
             {isGrouped ? (
               filteredOptions.map((group, index) => (
@@ -122,8 +128,10 @@ const KzuiCustomSelect = ({
               ))
             )}
           </ul>
+
         </div>
       )}
+      
     </div>
   );
 };
