@@ -5,11 +5,6 @@ import KzuiCustomSelect from './components/kzuiCustomSelect/KzuiCustomSelect';
 function App() {
   const [value, setValue] = useState(null);
 
-  // const fetchOptions = async (searchTerm) => {
-  //   const response = await fetch(`https://api.example.com/options?search=${searchTerm}`);
-  //   const data = await response.json();
-  //   return data.map(item => ({ label: item.name, value: item.id }));
-  // };
 
   const options = [
     { label: 'Option 1', value: 1 },
